@@ -1,0 +1,22 @@
+#Location of the input and the output here
+data_directory: /Users/vicentesolorzano/Desktop/DATA_GLACIER/WEEK_6_DATA_INGESTION_PIPELINE/DATA_INGESTION_PIPELINE_W6/data
+data_name: survival_data.csv
+inbound_delimiter: ","
+outbound_delimiter: "|"
+columns_names: ['client_id', 'age_start_observed', 'age_end', 'is_truncated',
+       'is_censored', 'is_dead','date_start_observed', 'date_end_observed']
+
+drop_columns: ['date_start_observed', 'date_end_observed']
+data_type:
+
+ client_id: int32
+ age_start_observed: int8
+ age_end: int8
+ is_truncated: bool
+ is_censored: bool
+ is_dead: bool
+ date_start_observed: 
+ date_end_observed: 
+data_clean_folder: /Users/vicentesolorzano/Desktop/DATA_GLACIER/WEEK_6_DATA_INGESTION_PIPELINE/DATA_INGESTION_PIPELINE_W6/data_clean
+clean_data: data_clean.gzip
+

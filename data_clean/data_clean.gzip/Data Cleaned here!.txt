@@ -1,0 +1,3 @@
+Once you run the IPYNB, the cleaned data will be saved in this folder in gz format.
+In 91 chuncks since, DaskDataFrame performs npartitions of pandas df (in this case 91)
+The npartitions could varie due to the local RAM available.
